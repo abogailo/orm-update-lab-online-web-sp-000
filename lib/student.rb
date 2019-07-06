@@ -51,12 +51,10 @@ class Student
     student
   end
 
-  def self.new_from_db(row)
-  id = row[0]
-  name = row[1]
-  grade = row[2]
-  self.new(name, grade, id)
-end
+  def self.new_from_db(array)
+    student_new = self.new(array[0], array[1], array[2])
+    student_new
+  end
 
   def self.find_by_name(name)
     sql = "SELECT * FROM students WHERE name = ?"
