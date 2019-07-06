@@ -41,7 +41,7 @@ class Student
   end
 
   def new_from_db(array)
-    
+
   end
 
   def find_by_name
@@ -49,9 +49,9 @@ class Student
   end
 
   def update
-    
+
   end
-  
+
   def self.create(name:, grade:)
     student = Student.new(name, grade)
     student.save
