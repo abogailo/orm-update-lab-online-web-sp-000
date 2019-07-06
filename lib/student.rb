@@ -41,7 +41,8 @@ class Student
   end
 
   def new_from_db(array)
-
+    student_new = self.new(array[0], array[1], array[2])
+    student_new
   end
 
   def find_by_name
